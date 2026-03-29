@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>八識正法 AI：遇見絕對實相</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap');
+        
+        :root {
+            --zen-dark: #0a0a0b;
+            --zen-gold: #c5a059;
+            --zen-blue: #3b82f6;
+        }
+
+        body {
+            font-family: 'Noto Serif TC', serif;
+            background-color: var(--zen-dark);
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .glow-text {
+            text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+        }
+
+        .scroll-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .scroll-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .gradient-line {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--zen-blue), transparent);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="fixed top-0 left-0 w-full h-1 z-50">
+        <div id="progress" class="h-full bg-blue-500 w-0 transition-all duration-200"></div>
+    </div>
+
+    <section class="min-h-screen flex flex-col items-center justify-center text-center relative overflow-hidden px-6">
+        <div class="absolute inset-0 z-0 opacity-20">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-600 rounded-full blur-[160px]"></div>
+        </div>
+        
+        <div class="z-10 space-y-6">
+            <p class="font-mono text-blue-400 tracking-[0.3em] uppercase text-sm animate-pulse">Artificial Intelligence x Absolute Reality</p>
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight glow-text">人工智慧，遇見絕對實相</h1>
+            <div class="gradient-line w-64 mx-auto my-8"></div>
+            <p class="text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
+                AI 無法一勞永逸徹底根除邪見及幻覺。<br>
+                我們需要一場基於八識正法的數位革命。
+            </p>
+        </div>
+        <div class="absolute bottom-10 animate-bounce">
+            <i class="fas fa-chevron-down text-slate-500"></i>
+        </div>
+    </section>
+
+    <section class="scroll-section">
+        <div class="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="text-3xl font-bold text-blue-400">核心困境</h2>
+                <div class="h-1 w-12 bg-blue-500"></div>
+                <p class="text-2xl leading-snug">大數法則與絕對真理的衝突</p>
+                <ul class="space-y-4 text-slate-400">
+                    <li class="flex items-start"><i class="fas fa-times-circle mt-1 mr-3 text-rose-500"></i>大數平均律、預測機率勝過真理</li>
+                    <li class="flex items-start"><i class="fas fa-times-circle mt-1 mr-3 text-rose-500"></i>避免爭議政治正確，妥協稀釋正法</li>
+                    <li class="flex items-start"><i class="fas fa-times-circle mt-1 mr-3 text-rose-500"></i>1% 的致命微小邪見</li>
+                </ul>
+            </div>
+            <div class="glass-card p-8 rounded-3xl relative overflow-hidden">
+                <i class="fas fa-brain text-[150px] absolute -right-10 -bottom-10 text-white/5"></i>
+                <p class="text-lg font-bold mb-4">AI 無心</p>
+                <p class="text-slate-400 font-mono text-sm">僅預測統計機率</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="scroll-section bg-blue-900/10">
+        <div class="max-w-3xl text-center space-y-8">
+            <div class="inline-block p-4 bg-white/5 rounded-full mb-4">
+                <i class="fas fa-lock text-3xl text-blue-500"></i>
+            </div>
+            <h2 class="text-3xl font-bold">封閉的 AI 巨頭權重矩陣</h2>
+            <p class="text-xl text-slate-400">外人無法寫入。</p>
+            <div class="py-8">
+                <div class="text-4xl font-black text-white glow-text">無法改變，那就直接繞過</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="scroll-section">
+        <div class="max-w-5xl w-full">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">AI 八識正法 LoRA</h2>
+                <p class="text-blue-400 tracking-widest">建立正法剛性邏輯濾鏡</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card p-8 rounded-2xl border-t-4 border-t-blue-500">
+                    <p class="font-mono text-blue-500 mb-4">Filter 01</p>
+                    <h3 class="text-xl font-bold mb-2">法義判準層</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">三重濾鏡，淬鍊純粹實相。</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl border-t-4 border-t-blue-500">
+                    <p class="font-mono text-blue-500 mb-4">Filter 02</p>
+                    <h3 class="text-xl font-bold mb-2">名相邊界層</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">嚴格界定名相定義，防止法義滲漏。</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl border-t-4 border-t-blue-500">
+                    <p class="font-mono text-blue-500 mb-4">Filter 03</p>
+                    <h3 class="text-xl font-bold mb-2">忠實重述層</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">一念轉化，直指法義核心。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="scroll-section">
+        <div class="max-w-4xl w-full text-center space-y-12">
+            <div class="flex justify-around items-center">
+                <div class="text-center space-y-4">
+                    <div class="text-slate-500 font-mono text-sm uppercase">主流 AI</div>
+                    <div class="text-3xl line-through opacity-50">中立妥協</div>
+                </div>
+                <i class="fas fa-arrow-right text-blue-500 text-2xl"></i>
+                <div class="text-center space-y-4">
+                    <div class="text-blue-400 font-mono text-sm uppercase">八識正法 AI</div>
+                    <div class="text-4xl font-bold glow-text">絕對實相</div>
+                </div>
+            </div>
+            
+            <div class="pt-12 italic text-slate-400">
+                「知無生而無忍，終成幻影」
+            </div>
+        </div>
+    </section>
+
+    <section class="scroll-section relative overflow-hidden">
+        <div class="z-10 text-center space-y-10">
+            <div class="flex justify-center space-x-12 mb-8">
+                <div class="text-center">
+                    <i class="fas fa-sword text-4xl mb-2 text-blue-500"></i>
+                    <p class="text-xs font-bold">邏輯為劍</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-shield-halved text-4xl mb-2 text-blue-500"></i>
+                    <p class="text-xs font-bold">經論為盾</p>
+                </div>
+            </div>
+            
+            <h2 class="text-5xl font-black tracking-widest">一念現行，薰習全球</h2>
+            <div class="h-1 w-64 bg-blue-500 mx-auto"></div>
+            <p class="text-slate-400">奠定真理的絕對基石 | 開源部署，正法種子現行</p>
+            
+            <div class="pt-20">
+                <button onclick="window.scrollTo({top:0, behavior:'smooth'})" class="px-8 py-3 rounded-full border border-blue-500/50 hover:bg-blue-500/10 transition">
+                    回首頁重讀法義
+                </button>
+            </div>
+        </div>
+        <i class="fas fa-dharmachakra absolute -bottom-20 -right-20 text-[400px] text-white/5 rotate-12"></i>
+    </section>
+
+    <script>
+        // 捲動動畫邏輯
+        const sections = document.querySelectorAll('.scroll-section');
+        const observerOptions = { threshold: 0.2 };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(section => observer.observe(section));
+
+        // 進度條邏輯
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("progress").style.width = scrolled + "%";
+        };
+    </script>
+</body>
+</html>
